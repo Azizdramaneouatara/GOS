@@ -29,6 +29,25 @@ def freedom_index():
     xl = pd.ExcelFile(file_path("Freedom_index.xlsx"))
     return xl.parse(1)
 
+def ndgain_index():
+    """
+    Read data from the ND_GAIN Index.
+    """
+    # TODO: Add xlrd to requirements.
+    xl = pd.ExcelFile(file_path("ND_gain.xlsx"))
+    return xl.parse(0)
+    
+def CO2_index():
+    """
+    Read data from the CO2 Index.
+    """
+    # TODO: Add xlrd to requirements.
+    xl = pd.ExcelFile(file_path("CO2.xlsx"))
+    return xl.parse(0)
+
+
+
+
 def ab_values():
     """
     Read generated A/B values for each country.
